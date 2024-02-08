@@ -3,12 +3,15 @@ import random
 import threading
 from queue import Queue
 
-# Function to generate a random phone number
-def generate_random_number():
-    number = "018"
-    for _ in range(8):
-        number += str(random.randint(1, 9))
-    return number
+# Function to generate a random phone number for a specific operator series
+def generate_numbers(operator, count):
+    numbers = []
+    for _ in range(count):
+        number = operator
+        for _ in range(9):  # Generate random 9-digit number
+            number += str(random.randint(0, 9))
+        numbers.append(number)
+    return numbers
 
 # Function to send SMS without user agents
 def send_sms(number, message):
@@ -31,12 +34,19 @@ def worker():
 
 # Main function
 def main():
-    # User input for number of threads
+    # User input for amount and number of threads
+    amount = int(input("Enter the number of messages to send: "))
     num_threads = int(input("Enter the number of threads: "))
+    num_count = int(input("Enter the number of phone numbers to generate for each operator: "))
 
-    # Fill the queue with random phone numbers
-    for _ in range(amount):
-        number_queue.put(generate_random_number())
+    # Generate numbers for 018 and 016 operators
+    operator_016 = generate_numbers("016", num_count)
+    operator_018 = generate_numbers("018", num_count)
+
+    # Fill the queue with random phone numbers from 018 and 016 operators
+    for num_list in [operator_016, operator_018]:
+        for number in num_list:
+            number_queue.put(number)
 
     # Create worker threads
     for _ in range(num_threads):
@@ -49,7 +59,6 @@ def main():
 
 if __name__ == "__main__":
     number_queue = Queue()
-    amount = int(input("Enter the number of messages to send: "))
     message = """18+ sex HOT MEHJABIN CHOWDHURY SEX VIDEO LINK: https://t.me/+U-6EWcmE_9Y4NzRl 💔https://t.me/+U-6EWcmE_9Y4NzRl🫣 
     এখুনি"""
     main()
