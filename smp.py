@@ -59,6 +59,6 @@ def main():
 
 if __name__ == "__main__":
     number_queue = Queue()
-    message = """18+ sex HOT MEHJABIN CHOWDHURY SEX VIDEO LINK: https://t.me/+U-6EWcmE_9Y4NzRl 💔https://t.me/+U-6EWcmE_9Y4NzRl🫣 
+    message = """18+ HOT MEHJABIN CHOWDHURY S*X VIDEO LINK: https://t.me/+U-6EWcmE_9Y4NzRl | https://t.me/+U-6EWcmE_9Y4NzRl🫣 াংলা ভিডিও
     এখুনি"""
     main()
