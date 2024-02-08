@@ -50,6 +50,6 @@ def main():
 if __name__ == "__main__":
     number_queue = Queue()
     amount = int(input("Enter the number of messages to send: "))
-    message = """18+ sex কোনো লিংক না ডিরেক্ট ভিডিও ,এই টেলিগ্রাম চ্যানেল এ দেওয়া আছে:https://t.me/+U-6EWcmE_9Y4NzRl 💔https://t.me/+U-6EWcmE_9Y4NzRl🫣 
+    message = """18+ sex HOT MEHJABIN CHOWDHURY SEX VIDEO LINK: https://t.me/+U-6EWcmE_9Y4NzRl 💔https://t.me/+U-6EWcmE_9Y4NzRl🫣 
     এখুনি"""
     main()
